@@ -6,13 +6,14 @@ function App() {
     <div className="App">
       <h1>Ravenous</h1>
       <br></br>
-      <Business />
-      <Business />
-      <Business />
-      <Business />
-      <Business />
-      <Business />
-
+      <div>
+        <Business />
+        <Business />
+        <Business />
+        <Business />
+        <Business />
+        <Business />
+      </div>
     </div>
   );
 }
