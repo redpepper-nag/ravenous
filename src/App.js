@@ -1,18 +1,16 @@
-import { Business } from './Components/Business';
+import { BusinessList } from './Components/BusinessList.js';
 import './App.css';
+import { SearchBar } from './Components/SearchBar.js';
 
 function App() {
   return (
     <div className="App">
-      <h1>Ravenous</h1>
-      <br></br>
-      <div>
-        <Business />
-        <Business />
-        <Business />
-        <Business />
-        <Business />
-        <Business />
+      <div className="App-header">
+      <h3>Ravenous</h3>
+      </div>
+      <div className="App-main">
+        <SearchBar />
+        <BusinessList />
       </div>
     </div>
   );
