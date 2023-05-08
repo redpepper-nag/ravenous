@@ -7,7 +7,7 @@ const business = {
   city: "Brooklyn",
   state: 'NY',
   zipcode: 11211,
-  category: 'Italian',
+  category: 'italian',
   rating: 4.4,
   reviewCount: "1501 ⭐️"
 };
@@ -18,14 +18,18 @@ export function Business() {
 
   return (
     <div>
-      {/* <img src={business.image} alt='Lilia' width="300px"/> */}
+      <img src={business.image} alt='Lilia' width="300em" />
       <h2>{business.name}</h2>
-      <p>{business.address}</p>
-      <h3>{business.category}</h3>
-      <p>{business.city}</p>
-      <p>{business.rating}</p>
-      <p>{business.zipcode}</p>
-      <p>{business.reviewCount}</p>
+      <div>
+        <p>{business.address}</p>
+        <p>{business.city}</p>
+        <p>{business.zipcode}</p>
+      </div>
+      <div>
+        <h3>{business.category}</h3>
+        <p>{business.rating}</p>
+        <p>{business.reviewCount}</p>
+      </div>
     </div>
   )
 }
